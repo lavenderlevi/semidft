@@ -1,0 +1,46 @@
+[workspace]
+name = "semiconductor-dft-workflow"
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = "3.12.*"
+ase = ">=3.23"
+pymatgen = ">=2024.6"
+spglib = ">=2.5"
+seekpath = ">=2.1"
+numpy = ">=1.26"
+scipy = ">=1.13"
+pandas = ">=2.2"
+matplotlib-base = ">=3.9"
+pydantic = ">=2.8"
+pyyaml = ">=6.0"
+typer = ">=0.12"
+rich = ">=13.7"
+hatchling = ">=1.25"
+
+[pypi-dependencies]
+semidft = { path = ".", editable = true }
+
+[feature.dev.dependencies]
+pytest = ">=8.2"
+pytest-cov = ">=5.0"
+hypothesis = ">=6.108"
+ruff = ">=0.6"
+mypy = ">=1.11"
+types-pyyaml = ">=6.0"
+
+[environments]
+default = { features = ["dev"], solve-group = "default" }
+dev = { features = ["dev"], solve-group = "default" }
+
+[tasks]
+test = "pytest -q -m 'not integration and not scientific'"
+test-all = "pytest -q"
+test-cov = "pytest --cov=semidft --cov-report=term-missing -m 'not integration and not scientific'"
+lint = "ruff check src tests"
+format = "ruff format src tests"
+format-check = "ruff format --check src tests"
+typecheck = "mypy src/semidft"
+check = { depends-on = ["lint", "format-check", "typecheck", "test"] }
+

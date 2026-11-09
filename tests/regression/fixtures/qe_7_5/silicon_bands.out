@@ -1,0 +1,20 @@
+Program PWSCF v.7.5 starts on  9Nov2026 at 10:02:00
+     Band Structure Calculation
+     number of Kohn-Sham states=            8
+     number of k points=                    3
+
+          k = 0.0000 0.0000 0.0000 (   567 PWs)   bands (ev):
+
+    -5.9820   3.0120   6.0120   6.0120   8.5620   8.5620   8.5620   9.2100
+
+          k = 0.4200 0.0000 0.4200 (   569 PWs)   bands (ev):
+
+    -5.0120   2.0450   4.1200   4.2100   6.5920   8.1200   8.3400   9.4500
+
+          k = 0.5000 0.5000 0.5000 (   565 PWs)   bands (ev):
+
+    -4.5100   2.5100   4.8120   4.8120   7.4200   8.9100   8.9100  10.1200
+
+     End of band structure calculation
+
+   JOB DONE.

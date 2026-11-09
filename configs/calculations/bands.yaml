@@ -1,0 +1,7 @@
+schema_version: "1.0.0"
+calculation_type: "bands"
+kpath_generator: "seekpath"
+points_per_segment: 30
+symprec_angstrom: 0.001
+nbnd_extra_conduction: 4
+disk_io: "low"

@@ -1,0 +1,123 @@
+# =============================================================================
+# 1. Secrets, Credentials, Keys & Environment Variables (HIGH SECURITY)
+# =============================================================================
+.env
+.env.*
+*.env
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.csr
+*.der
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.ppk
+
+*secret*
+*credentials*
+*token*
+.netrc
+.pypirc
+.aws/
+.gcp/
+
+# =============================================================================
+# 2. Copyrighted Textbooks & Licensed Pseudopotential Binaries (AGENTS.md §6.2)
+# =============================================================================
+# Never push commercial/copyrighted reference PDFs or ebooks to a public repo
+docs/*.pdf
+*.pdf
+*.epub
+*.djvu
+
+# Exclude real third-party UPF pseudopotential binaries; keep synthetic unit-test headers
+data/pseudopotentials/**/*.UPF
+data/pseudopotentials/**/*.upf
+*.UPF
+*.upf
+!tests/fixtures/pseudos/*.UPF
+
+# =============================================================================
+# 3. AI Agent Directories, Local Machine Notes & Internal Planning Logs
+# =============================================================================
+.claude/
+.gemini/
+.cursor/
+.agent/
+.antigravity/
+.aider*
+CLAUDE.md
+docs/Instruction-plan for semidft.md
+docs/superpowers/
+
+# =============================================================================
+# 4. Quantum ESPRESSO Scratch, Wavefunctions, Outputs & Provenance Databases
+# =============================================================================
+/calculations/
+!/calculations/.gitkeep
+/runs/
+/scratch/
+/tmp/
+
+*.wfc*
+*.mix*
+*.hub*
+*.igk*
+*.save/
+charge-density.dat
+charge-density.hdf5
+data-file-schema.xml
+CRASH
+input_tmp.in
+pwscf.*
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# =============================================================================
+# 5. Python, Pixi, Testing & Static-Analysis Artifacts
+# =============================================================================
+# Note: pixi.toml and pixi.lock ARE tracked for reproducible environments
+.pixi/
+.venv/
+venv/
+ENV/
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+/dist/
+/build/
+*.egg-info/
+
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# =============================================================================
+# 6. OS & Editor Local State
+# =============================================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

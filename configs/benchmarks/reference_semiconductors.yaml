@@ -1,0 +1,89 @@
+schema_version: "1.0.0"
+materials:
+  Si:
+    symbol: "Si"
+    space_group_number: 227
+    pbe_protocol:
+      xc_functional: "PBE"
+      pseudopotential_set: "SSSP PBE v2.0 Efficiency"
+      ecutwfc_ry: 30.0
+      ecutrho_ry: 240.0
+      kpoints: [10, 10, 10]
+      reference_doi: "10.1126/science.aad3000"
+    pbe_lattice_a0_angstrom: 5.469
+    pbe_lattice_tolerance_angstrom: 0.025
+    pbe_bulk_modulus_gpa: 88.5
+    pbe_bulk_modulus_tolerance_gpa: 5.0
+    pbe_fundamental_gap_ev: 0.58
+    pbe_gap_tolerance_ev: 0.08
+    expected_gap_type: "indirect"
+    expected_vbm_kpoint: [0.0, 0.0, 0.0]
+    experimental_lattice_300k_angstrom: 5.4309
+    experimental_bulk_modulus_gpa: 97.8
+    experimental_gap:
+      value_ev: 1.12
+      temperature_k: 300.0
+      phase: "diamond-cubic"
+      gap_definition: "fundamental_electronic"
+      uncertainty_ev: 0.01
+      source:
+        doi: "10.1063/1.1368156"
+        citation: "Vurgaftman, Meyer & Ram-Mohan, J. Appl. Phys. 89, 5815 (2001)"
+  Ge:
+    symbol: "Ge"
+    space_group_number: 227
+    pbe_protocol:
+      xc_functional: "PBE"
+      pseudopotential_set: "SSSP PBE v2.0 Efficiency"
+      ecutwfc_ry: 40.0
+      ecutrho_ry: 320.0
+      kpoints: [12, 12, 12]
+      reference_doi: "10.1126/science.aad3000"
+    pbe_lattice_a0_angstrom: 5.765
+    pbe_lattice_tolerance_angstrom: 0.04
+    pbe_bulk_modulus_gpa: 59.0
+    pbe_bulk_modulus_tolerance_gpa: 6.0
+    pbe_fundamental_gap_ev: 0.10
+    pbe_gap_tolerance_ev: 0.15
+    expected_gap_type: "indirect"
+    expected_vbm_kpoint: [0.0, 0.0, 0.0]
+    experimental_lattice_300k_angstrom: 5.6578
+    experimental_bulk_modulus_gpa: 75.0
+    experimental_gap:
+      value_ev: 0.66
+      temperature_k: 300.0
+      phase: "diamond-cubic"
+      gap_definition: "fundamental_electronic"
+      uncertainty_ev: 0.01
+      source:
+        doi: "10.1063/1.1368156"
+        citation: "Vurgaftman, Meyer & Ram-Mohan, J. Appl. Phys. 89, 5815 (2001)"
+  GaAs:
+    symbol: "GaAs"
+    space_group_number: 216
+    pbe_protocol:
+      xc_functional: "PBE"
+      pseudopotential_set: "SSSP PBE v2.0 Efficiency"
+      ecutwfc_ry: 45.0
+      ecutrho_ry: 360.0
+      kpoints: [10, 10, 10]
+      reference_doi: "10.1126/science.aad3000"
+    pbe_lattice_a0_angstrom: 5.752
+    pbe_lattice_tolerance_angstrom: 0.04
+    pbe_bulk_modulus_gpa: 61.5
+    pbe_bulk_modulus_tolerance_gpa: 6.0
+    pbe_fundamental_gap_ev: 0.50
+    pbe_gap_tolerance_ev: 0.15
+    expected_gap_type: "direct"
+    expected_vbm_kpoint: [0.0, 0.0, 0.0]
+    experimental_lattice_300k_angstrom: 5.6532
+    experimental_bulk_modulus_gpa: 75.5
+    experimental_gap:
+      value_ev: 1.42
+      temperature_k: 300.0
+      phase: "zincblende"
+      gap_definition: "fundamental_electronic"
+      uncertainty_ev: 0.01
+      source:
+        doi: "10.1063/1.1368156"
+        citation: "Vurgaftman, Meyer & Ram-Mohan, J. Appl. Phys. 89, 5815 (2001)"

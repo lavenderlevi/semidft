@@ -1,0 +1,10 @@
+schema_version: "1.0.0"
+calculation_type: "vc-relax"
+conv_thr_ry: 1.0e-8
+energy_tolerance_ev: 0.0013605693122994
+force_tolerance_ev_per_angstrom: 0.01
+pressure_tolerance_gpa: 0.05
+stress_tolerance_gpa: 0.10
+nstep: 100
+electron_maxstep: 100
+disk_io: "low"

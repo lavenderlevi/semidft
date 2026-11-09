@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "qe_version": "7.5",
+  "job_done": true,
+  "scf_converged_flag": true,
+  "scf_iterations": 7,
+  "total_energy_ev": -215.55785334314976,
+  "fermi_energy_ev": 6.245,
+  "highest_occupied_ev": 6.012,
+  "lowest_unoccupied_ev": 6.592,
+  "pressure_gpa": -0.012
+}

@@ -1,0 +1,8 @@
+schema_version: "1.0.0"
+calculation_type: "scf"
+conv_thr_ry: 1.0e-8
+kpoints: [8, 8, 8]
+kpoint_offset: [0, 0, 0]
+occupations: "fixed"
+electron_maxstep: 100
+disk_io: "low"

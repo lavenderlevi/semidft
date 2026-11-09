@@ -1,0 +1,7 @@
+schema_version: "1.0.0"
+workflow_type: "eos"
+eos_model: "birch_murnaghan_3rd_order"
+volume_scale_factors: [0.94, 0.96, 0.98, 1.00, 1.02, 1.04, 1.06]
+calculation_type: "scf"
+conv_thr_ry: 1.0e-8
+kpoints: [10, 10, 10]

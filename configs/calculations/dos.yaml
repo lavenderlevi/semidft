@@ -1,0 +1,9 @@
+schema_version: "1.0.0"
+calculation_type: "nscf"
+kpoints: [16, 16, 16]
+kpoint_offset: [0, 0, 0]
+occupations: "tetrahedra"
+emin_ev: -20.0
+emax_ev: 20.0
+delta_e_ev: 0.02
+disk_io: "low"

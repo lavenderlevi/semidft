@@ -1,0 +1,35 @@
+Program PWSCF v.7.5 starts on  9Nov2026 at 10:00:00
+     bravais-lattice index     =            0
+     number of atoms/cell      =            2
+     number of Kohn-Sham states=            8
+     kinetic-energy cutoff     =      30.0000  Ry
+     charge density cutoff     =     240.0000  Ry
+     convergence threshold     =      1.0E-08
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    30.00 Ry     beta= 0.70
+     total energy              =     -15.81000000 Ry
+     estimated scf accuracy    <       0.04500000 Ry
+
+     End of self-consistent calculation
+
+     the Fermi energy is     6.2450 ev
+     highest occupied, lowest unoccupied level (ev):     6.0120     6.5920
+
+!    total energy              =     -15.84321000 Ry
+     estimated scf accuracy    <          1.2E-10 Ry
+
+     convergence has been achieved in   7 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  1   force =     0.00000000    0.00000000    0.00000000
+     Total force =     0.000000     Total SCF correction =     0.000000
+
+     total   stress  (Ry/bohr**3)                   (kbar)     P=       -0.12
+  -0.00000082   0.00000000   0.00000000         -0.12      0.00      0.00
+   0.00000000  -0.00000082   0.00000000          0.00     -0.12      0.00
+   0.00000000   0.00000000  -0.00000082          0.00      0.00     -0.12
+
+   JOB DONE.

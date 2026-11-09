@@ -1,0 +1,42 @@
+schema_version: "1.0.0"
+library: "SSSP"
+library_version: "2.0"
+accuracy: "efficiency"
+functional: "PBE"
+elements:
+  Si:
+    element: "Si"
+    functional: "PBE"
+    pseudo_type: "USPP"
+    relativistic: "scalar_relativistic"
+    z_valence: 4.0
+    recommended_ecutwfc_ry: 30.0
+    recommended_ecutrho_ry: 240.0
+    filename: "Si.UPF"
+  Ge:
+    element: "Ge"
+    functional: "PBE"
+    pseudo_type: "PAW"
+    relativistic: "scalar_relativistic"
+    z_valence: 14.0
+    recommended_ecutwfc_ry: 40.0
+    recommended_ecutrho_ry: 320.0
+    filename: "Ge.UPF"
+  Ga:
+    element: "Ga"
+    functional: "PBE"
+    pseudo_type: "PAW"
+    relativistic: "scalar_relativistic"
+    z_valence: 13.0
+    recommended_ecutwfc_ry: 45.0
+    recommended_ecutrho_ry: 360.0
+    filename: "Ga.UPF"
+  As:
+    element: "As"
+    functional: "PBE"
+    pseudo_type: "USPP"
+    relativistic: "scalar_relativistic"
+    z_valence: 5.0
+    recommended_ecutwfc_ry: 35.0
+    recommended_ecutrho_ry: 280.0
+    filename: "As.UPF"

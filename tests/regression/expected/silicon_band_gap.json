@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "xc_functional": "PBE",
+  "gap_classification": "indirect",
+  "fundamental_gap": {
+    "value_ev": 0.58,
+    "vbm": {
+      "energy_ev": 6.012,
+      "band_index": 3,
+      "kpoint_fractional": [0.0, 0.0, 0.0],
+      "kpoint_label": "GAMMA",
+      "spin_channel": "unpolarized",
+      "occupation": 1.0,
+      "source": "high_symmetry_path"
+    },
+    "cbm": {
+      "energy_ev": 6.592,
+      "band_index": 5,
+      "kpoint_fractional": [0.42, 0.0, 0.42],
+      "kpoint_label": null,
+      "spin_channel": "unpolarized",
+      "occupation": 0.0,
+      "source": "high_symmetry_path"
+    }
+  },
+  "minimum_direct_gap": {
+    "value_ev": 2.382,
+    "kpoint_fractional": [0.42, 0.0, 0.42]
+  }
+}
